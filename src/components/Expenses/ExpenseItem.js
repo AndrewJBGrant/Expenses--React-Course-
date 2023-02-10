@@ -5,10 +5,12 @@ import Card from "../UI/Card";
 
 function ExpenseItem(props) {
   const [title, setTitle] = useState(props.title);
+  // We have 4 seperate instances of ExpenseItem
   //console.log('ExpenseItem evaluated by React');
 
   const clickHandler = () => {
     setTitle("Updated");
+    //Value below is not cahnged yet as React has not updated the component
     //console.log(title);
   };
 
