@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
+import ExpensesFilter from "./ExpensesFilter";
 import Card from "../UI/Card";
 
 function Expenses(props) {
+
+const [dropDownYear, setDropDownYear] = useState('2020')
+
+  const filterChangeHnadler = selectedYear => {
+console.log('Expense.js');
+console.log(selectedYear);
+setDropDownYear(selectedYear);
+  };
   return (
+    <div>
+
     <Card className="expenses">
+      <ExpensesFilter selected={dropDownYear} onChangeFilter={filterChangeHnadler} />
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
@@ -27,6 +39,7 @@ function Expenses(props) {
         date={props.items[3].date}
       />
     </Card>
+    </div>
   );
 }
 

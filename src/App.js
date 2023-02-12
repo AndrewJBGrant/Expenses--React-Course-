@@ -3,6 +3,7 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 
+
 //Can also set functions with arrow syntax
 // eg.. const App = () => {
 function App() {
@@ -40,6 +41,7 @@ console.log('In App.js');
 
   return (
     <div>
+
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
