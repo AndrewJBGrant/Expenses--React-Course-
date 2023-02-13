@@ -12,11 +12,13 @@ const ExpensesFilter = (props) => {
 
 
   return (
+    //Controlled component in this case controlled by the Expense.js
     <div className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by year</label>
         {/* Click Event should trigger a function */}
         <select value={props.selected} onChange={filterYearHandler}>
+          <option value="2023">2023</option>
           <option value="2022">2022</option>
           <option value="2021">2021</option>
           <option value="2020">2020</option>
