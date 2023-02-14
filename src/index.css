@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  color:whitesmoke;
 }
 
 html {
@@ -10,5 +11,5 @@ html {
 
 body {
   margin: 0;
-  background-color: #eaebe7;
+ /* background-color: #eaebe7; */
 }
