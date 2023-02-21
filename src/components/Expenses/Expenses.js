@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Expenses.css";
-import ExpenseItem from "./ExpenseItem";
 import ExpensesFilter from "./ExpensesFilter";
 import Card from "../UI/Card";
+import ExpensesList from "./ExpensesList";
 
 function Expenses(props) {
   const [dropDownYear, setDropDownYear] = useState("2020");
@@ -24,19 +24,7 @@ function Expenses(props) {
           selected={dropDownYear}
           onChangeFilter={filterChangeHandler}
         />
-        {/* Dynamic!! */}
-        {filterExpenses.length === 0 ? (
-          <p>No expenses for the year {dropDownYear} </p>
-        ) : (
-          filterExpenses.map((expense) => (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          ))
-        )}
+       <ExpensesList items={filterExpenses}  />
       </Card>
     </div>
   );
