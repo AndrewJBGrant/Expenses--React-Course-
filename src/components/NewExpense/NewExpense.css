@@ -1,11 +1,11 @@
 .new-expense {
-  background-color: #0f0d35;
+  background-color: #cdccdd;
   color: white;
   padding: 1rem;
   margin: 2rem auto;
   width: 50rem;
   max-width: 95%;
-  border-radius: 12px;
+  border-radius: 6px;
   text-align: center;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
@@ -14,10 +14,10 @@
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 1px solid #204fa1;
-  background-color: #204fa1;
+  border: 1px solid #4e545e;
+  background-color: #444a53;
   color: white;
-  border-radius: 12px;
+  border-radius: 6px;
   margin-right: 1rem;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .new-expense button.alternative {
-  color: #220131;
+  color: #4C4C4C;
   border-color: transparent;
   background-color: transparent;
 }

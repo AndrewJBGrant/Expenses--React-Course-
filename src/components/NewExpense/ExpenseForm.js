@@ -55,7 +55,7 @@ const ExpenseForm = (props) => {
 // Create an object to captute values from for submit
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate)
       };
          //console.log(expenseData);

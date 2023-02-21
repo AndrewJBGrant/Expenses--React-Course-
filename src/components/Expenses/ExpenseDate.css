@@ -3,10 +3,7 @@
   flex-direction: column;
   width: 5.5rem;
   height: 5.5rem;
-  border: 1px solid #ececec;
-  background-color: #0f0d35;
-  color: white;
-  border-radius: 12px;
+  color: rgb(90, 30, 30);
   align-items: center;
   justify-content: center;
 }
