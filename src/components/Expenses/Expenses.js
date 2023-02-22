@@ -6,7 +6,7 @@ import ExpensesList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
-  const [dropDownYear, setDropDownYear] = useState("2020");
+  const [dropDownYear, setDropDownYear] = useState("2023");
 
   const filterChangeHandler = (selectedYear) => {
     //console.log("Expense.js");
@@ -14,7 +14,9 @@ function Expenses(props) {
     setDropDownYear(selectedYear);
   };
 
+//The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
   const filterExpenses = props.items.filter((expense) => {
+    // filter the props.item array and return the date value for the dropDownyear
     return expense.date.getFullYear().toString() === dropDownYear;
   });
 

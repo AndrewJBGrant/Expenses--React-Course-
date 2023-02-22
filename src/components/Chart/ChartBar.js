@@ -3,6 +3,7 @@ import React from "react";
 import "./ChartBar.css";
 
 const ChartBar = (props) => {
+// This variable will determine how much to fill the chart bars
 let barFillHeight = '0%';
 
 if(props.maxValue > 0) {
@@ -17,6 +18,7 @@ if(props.maxValue > 0) {
         {/* style wants a JS object as a value */}
         <div className="chart-bar__fill" style={{height: barFillHeight}}></div>
       </div>
+      {/* props.label = month defined in ExpensesChart */}
       <div className="chart-bar__label">{props.label}</div>
     </div>
   );

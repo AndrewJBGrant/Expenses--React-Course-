@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 import ExpenseItem from "./ExpenseItem";
 import "./ExpensesList.css";
 
@@ -8,6 +8,8 @@ const ExpensesList = (props) => {
     return <h2 className="expenses-list__fallback">No expenses found</h2>;
   }
 
+//The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+// Here using .Map() to take data from the props.item array and push it into the ExpensesItem object
   return (
     <ul className="expenses-list">
       {props.items.map((expense) => (

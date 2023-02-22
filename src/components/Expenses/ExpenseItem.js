@@ -7,6 +7,7 @@ function ExpenseItem(props) {
   return (
     <li>
       <Card className="expense-item">
+        {/* // Taking the div from Expensedate */}
         <ExpenseDate date={props.date} />
         <div className="expense-item__description">
           <h2>{props.title}</h2>
