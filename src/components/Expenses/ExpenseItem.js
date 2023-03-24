@@ -21,10 +21,10 @@ function ExpenseItem(props) {
 export default ExpenseItem;
 
 // Quick code to change title
-// //import React, { useState } from "react";
 // const [title, setTitle] = useState(props.title);
 //   // We have 4 seperate instances of ExpenseItem
-//   //console.log('ExpenseItem evaluated by React');
+//   //console.log('ExpenseItem evaluated by React'); will show *4 on first render, if
+// we update title on one item console.log('ExpenseItem evaluated by React'); will show just once
 
 //   const clickHandler = () => {
 //     setTitle("Updated");
